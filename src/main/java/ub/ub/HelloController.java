@@ -148,7 +148,7 @@ public class HelloController {
     @FXML
     private void half_push() {
         String buttonid = questions[counter][5];
-        int randomnum = rand.nextInt((3 - 1) + 1) + 1;
+        int randomnum = rand.nextInt(4 - 1) + 1;
         if (buttonid.equals("a")) {
             if (randomnum == 1) {
                 b.setVisible(false);
@@ -248,11 +248,11 @@ public class HelloController {
         XYChart.Series aud = new XYChart.Series ();
         aud.setName("Szavazatok");
 
-        int one_random = rand.nextInt(100 + 1 - 26) + 26;
+        int one_random = rand.nextInt(100 - 26) + 26;
         int supp_number_one = 100 - one_random;
-        int two_random = rand.nextInt(supp_number_one + 1 - 0) + 0;
+        int two_random = rand.nextInt(supp_number_one);
         int supp_number_two = supp_number_one - two_random;
-        int three_random = rand.nextInt(supp_number_two + 1 - 0) + 0;
+        int three_random = rand.nextInt(supp_number_two);
         int four_random = supp_number_two - three_random;
 
 
