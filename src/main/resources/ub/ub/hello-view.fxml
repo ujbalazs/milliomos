@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
@@ -138,7 +139,7 @@
                   <Font name="Arial Bold" size="13.0" />
                </font>
             </Button>
-            <Button layoutX="646.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Közönség">
+            <Button fx:id="audience" layoutX="646.0" layoutY="120.0" mnemonicParsing="false" onAction="#audience_push" prefHeight="26.0" prefWidth="86.0" text="Közönség">
                <font>
                   <Font name="Arial Bold" size="13.0" />
                </font>
@@ -148,6 +149,7 @@
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
             </Label>
+            <Pane layoutX="46.0" layoutY="46.0" prefHeight="273.0" prefWidth="475.0" />
          </children></Pane>
       <Pane fx:id="menu" prefHeight="600.0" prefWidth="800.0">
          <children>
@@ -193,5 +195,34 @@
             </Label>
          </children>
       </Pane>
+      <Pane fx:id="audience_pane" layoutX="14.0" layoutY="18.0" prefHeight="297.0" prefWidth="557.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="267.0" layoutX="37.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="418.0" />
+            <BarChart fx:id="audience_chart" layoutX="53.0" layoutY="30.0" prefHeight="235.0" prefWidth="382.0" title="Közönség">
+              <xAxis>
+                <CategoryAxis fx:id="category" prefHeight="0.0" prefWidth="341.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="number" autoRanging="false" minorTickLength="0.0" minorTickVisible="false" prefHeight="181.0" prefWidth="0.0" side="LEFT" tickLabelsVisible="false" tickMarkVisible="false" tickUnit="0.0" />
+              </yAxis>
+            </BarChart>
+            <Label fx:id="a_chart" layoutX="108.0" layoutY="266.0" prefHeight="17.0" prefWidth="50.0" text="A">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="b_chart" layoutX="192.0" layoutY="266.0" prefHeight="17.0" prefWidth="50.0" text="B">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="c_chart" layoutX="279.0" layoutY="266.0" prefHeight="17.0" prefWidth="50.0" text="C">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="d_chart" layoutX="368.0" layoutY="266.0" prefHeight="17.0" prefWidth="50.0" text="D">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+         </children></Pane>
    </children>
 </AnchorPane>

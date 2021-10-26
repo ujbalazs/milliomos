@@ -3,6 +3,7 @@ package ub.ub;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.chart.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
@@ -40,6 +41,22 @@ public class HelloController {
     private Label k;
     @FXML
     private Label dialog;
+    @FXML
+    private Pane audience_pane;
+    @FXML
+    private Button audience;
+    @FXML
+    private BarChart audience_chart;
+    @FXML
+    private Label a_chart;
+    @FXML
+    private Label b_chart;
+    @FXML
+    private Label c_chart;
+    @FXML
+    private Label d_chart;
+
+
 
 
     // Kérdések
@@ -52,6 +69,8 @@ public class HelloController {
     };
     // Számláló amit növelek
     int counter = 0;
+
+    Random rand = new Random();
 
     // Kérdésváltó
     public void changequestion(String id) {
@@ -97,6 +116,7 @@ public class HelloController {
         c.setVisible(true);
         d.setVisible(true);
         phone_pane.setVisible(false);
+        audience_pane.setVisible(false);
     }
 
     @FXML
@@ -106,6 +126,7 @@ public class HelloController {
         b.setVisible(true);
         d.setVisible(true);
         phone_pane.setVisible(false);
+        audience_pane.setVisible(false);
     }
 
     @FXML
@@ -115,6 +136,7 @@ public class HelloController {
         b.setVisible(true);
         c.setVisible(true);
         phone_pane.setVisible(false);
+        audience_pane.setVisible(false);
     }
 
     @FXML
@@ -126,7 +148,6 @@ public class HelloController {
     @FXML
     private void half_push() {
         String buttonid = questions[counter][5];
-        Random rand = new Random();
         int randomnum = rand.nextInt((3 - 1) + 1) + 1;
         if (buttonid.equals("a")) {
             if (randomnum == 1) {
@@ -218,7 +239,83 @@ public class HelloController {
         new Thread(task).start();
 
     }
+    @FXML
+    private void audience_push(){
+        audience_pane.setVisible(true);
+        audience.setTextFill(Color.RED);
+        audience.setDisable(true);
+
+        XYChart.Series aud = new XYChart.Series ();
+        aud.setName("Szavazatok");
+
+        int one_random = rand.nextInt(100 + 1 - 26) + 26;
+        int supp_number_one = 100 - one_random;
+        int two_random = rand.nextInt(supp_number_one + 1 - 0) + 0;
+        int supp_number_two = supp_number_one - two_random;
+        int three_random = rand.nextInt(supp_number_two + 1 - 0) + 0;
+        int four_random = supp_number_two - three_random;
+
+
+        if(questions[counter][5].equals("a")){
+
+            aud.getData().add(new XYChart.Data("", one_random));
+            a_chart.setText("A: "+one_random+"%");
+            aud.getData().add(new XYChart.Data(" ", two_random));
+            b_chart.setText("B: "+two_random+"%");
+            aud.getData().add(new XYChart.Data("  ", three_random));
+            c_chart.setText("C: "+three_random+"%");
+            aud.getData().add(new XYChart.Data("   ", four_random));
+            d_chart.setText("D: "+four_random+"%");
+
+            audience_chart.getData().add(aud);
+        }
+
+        if(questions[counter][5].equals("b")){
+
+            aud.getData().add(new XYChart.Data("", two_random));
+            a_chart.setText("A: "+two_random+"%");
+            aud.getData().add(new XYChart.Data(" ", one_random));
+            b_chart.setText("B: "+one_random+"%");
+            aud.getData().add(new XYChart.Data("  ", three_random));
+            c_chart.setText("C: "+three_random+"%");
+            aud.getData().add(new XYChart.Data("   ", four_random));
+            d_chart.setText("D: "+four_random+"%");
+
+            audience_chart.getData().add(aud);
+        }
+
+        if(questions[counter][5].equals("c")){
+
+            aud.getData().add(new XYChart.Data("", two_random));
+            a_chart.setText("A: "+two_random+"%");
+            aud.getData().add(new XYChart.Data(" ", three_random));
+            b_chart.setText("B: "+three_random+"%");
+            aud.getData().add(new XYChart.Data("  ", one_random));
+            c_chart.setText("C: "+one_random+"%");
+            aud.getData().add(new XYChart.Data("   ", four_random));
+            d_chart.setText("D: "+four_random+"%");
+
+            audience_chart.getData().add(aud);
+        }
+
+        if(questions[counter][5].equals("d")){
+
+            aud.getData().add(new XYChart.Data("", two_random));
+            a_chart.setText("A: "+two_random+"%");
+            aud.getData().add(new XYChart.Data(" ", three_random));
+            b_chart.setText("B: "+three_random+"%");
+            aud.getData().add(new XYChart.Data("  ", four_random));
+            c_chart.setText("C: "+four_random+"%");
+            aud.getData().add(new XYChart.Data("   ", one_random));
+            d_chart.setText("D: "+one_random+"%");
+
+            audience_chart.getData().add(aud);
+        }
+
+
+    }
 }
+
 
 
 
