@@ -33,98 +33,98 @@
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font></Button>
-            <Label layoutX="11.0" layoutY="425.0" text="-A:" textFill="#ff8400">
+            <Label layoutX="11.0" layoutY="425.0" text="♦A:" textFill="#ff8400">
                <font>
                   <Font name="Arial Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="298.0" layoutY="425.0" text="-B:" textFill="#ff8400">
+            <Label layoutX="298.0" layoutY="425.0" text="♦B:" textFill="#ff8400">
                <font>
                   <Font name="Arial Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="298.0" layoutY="514.0" text="-D:" textFill="#ff8400">
+            <Label layoutX="298.0" layoutY="514.0" text="♦D:" textFill="#ff8400">
                <font>
                   <Font name="Arial Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="11.0" layoutY="514.0" text="-C:" textFill="#ff8400">
+            <Label layoutX="11.0" layoutY="514.0" text="♦C:" textFill="#ff8400">
                <font>
                   <Font name="Arial Bold" size="25.0" />
                </font>
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="584.0" layoutX="573.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="221.0" />
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="556.0" prefHeight="30.0" prefWidth="178.0" text="1.                    5.000Ft">
+            <Label fx:id="lab_a" alignment="TOP_RIGHT" layoutX="594.0" layoutY="556.0" prefHeight="30.0" prefWidth="178.0" text="1.                    5.000Ft" textFill="#ff8400">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="529.0" prefHeight="30.0" prefWidth="178.0" text="2.                  10.000Ft">
+            <Label fx:id="lab_b" alignment="TOP_RIGHT" layoutX="594.0" layoutY="529.0" prefHeight="30.0" prefWidth="178.0" text="2.                  10.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="499.0" prefHeight="30.0" prefWidth="178.0" text="3.                  25.000Ft">
+            <Label fx:id="lab_c" alignment="TOP_RIGHT" layoutX="594.0" layoutY="499.0" prefHeight="30.0" prefWidth="178.0" text="3.                  25.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="469.0" prefHeight="30.0" prefWidth="178.0" text="4.                  50.000Ft">
+            <Label fx:id="lab_d" alignment="TOP_RIGHT" layoutX="594.0" layoutY="469.0" prefHeight="30.0" prefWidth="178.0" text="4.                  50.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="440.0" prefHeight="30.0" prefWidth="178.0" text="5.                100.000Ft" textFill="WHITE">
+            <Label fx:id="lab_e" alignment="TOP_RIGHT" layoutX="594.0" layoutY="440.0" prefHeight="30.0" prefWidth="178.0" text="5.                100.000Ft" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="410.0" prefHeight="30.0" prefWidth="178.0" text="6.                200.000Ft">
+            <Label fx:id="lab_f" alignment="TOP_RIGHT" layoutX="594.0" layoutY="410.0" prefHeight="30.0" prefWidth="178.0" text="6.                200.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="381.0" prefHeight="30.0" prefWidth="178.0" text="7.                300.000Ft">
+            <Label fx:id="lab_g" alignment="TOP_RIGHT" layoutX="594.0" layoutY="381.0" prefHeight="30.0" prefWidth="178.0" text="7.                300.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="358.0" prefHeight="30.0" prefWidth="178.0" text="8.                500.000Ft">
+            <Label fx:id="lab_h" alignment="TOP_RIGHT" layoutX="594.0" layoutY="358.0" prefHeight="30.0" prefWidth="178.0" text="8.                500.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="334.0" prefHeight="30.0" prefWidth="178.0" text="9.                800.000Ft">
+            <Label fx:id="lab_i" alignment="TOP_RIGHT" layoutX="594.0" layoutY="334.0" prefHeight="30.0" prefWidth="178.0" text="9.                800.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="312.0" prefHeight="30.0" prefWidth="178.0" text="10.            1.500.000Ft" textFill="WHITE">
+            <Label fx:id="lab_j" alignment="TOP_RIGHT" layoutX="594.0" layoutY="312.0" prefHeight="30.0" prefWidth="178.0" text="10.            1.500.000Ft" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="291.0" prefHeight="30.0" prefWidth="178.0" text="11.            3.000.000Ft">
+            <Label fx:id="lab_k" alignment="TOP_RIGHT" layoutX="594.0" layoutY="291.0" prefHeight="30.0" prefWidth="178.0" text="11.            3.000.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="270.0" prefHeight="30.0" prefWidth="178.0" text="12.            5.000.000Ft">
+            <Label fx:id="lab_l" alignment="TOP_RIGHT" layoutX="594.0" layoutY="270.0" prefHeight="30.0" prefWidth="178.0" text="12.            5.000.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="248.0" prefHeight="30.0" prefWidth="178.0" text="13.          10.000.000Ft">
+            <Label fx:id="lab_m" alignment="TOP_RIGHT" layoutX="594.0" layoutY="248.0" prefHeight="30.0" prefWidth="178.0" text="13.          10.000.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="225.0" prefHeight="30.0" prefWidth="178.0" text="14.          20.000.000Ft">
+            <Label fx:id="lab_n" alignment="TOP_RIGHT" layoutX="594.0" layoutY="225.0" prefHeight="30.0" prefWidth="178.0" text="14.          20.000.000Ft">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" layoutX="594.0" layoutY="204.0" prefHeight="30.0" prefWidth="178.0" text="15.          40.000.000Ft" textFill="WHITE">
+            <Label fx:id="lab_o" alignment="TOP_RIGHT" layoutX="594.0" layoutY="204.0" prefHeight="30.0" prefWidth="178.0" text="15.          40.000.000Ft" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
@@ -172,10 +172,15 @@
          </children></Pane>
       <Pane fx:id="close" prefHeight="600.0" prefWidth="800.0" visible="false">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" stroke="RED" strokeType="INSIDE" strokeWidth="3.0" width="800.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="800.0" />
             <Label layoutX="204.0" layoutY="166.0" text="Vége a játéknak!">
                <font>
                   <Font name="Arial Bold Italic" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="prize" layoutX="239.0" layoutY="253.0" prefHeight="47.0" prefWidth="323.0" text="Az ön nyereménye: 40.000.000 Ft!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Label>
             <Button fx:id="exit" layoutX="293.0" layoutY="358.0" mnemonicParsing="false" onAction="#exit_push" prefHeight="71.0" prefWidth="214.0" text="Kilépés" textFill="#bc2f2f">

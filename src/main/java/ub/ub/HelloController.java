@@ -55,6 +55,39 @@ public class HelloController {
     private Label d_chart;
     @FXML
     private Label question_click;
+    @FXML
+    private Label prize;
+    @FXML
+    private Label lab_a;
+    @FXML
+    private Label lab_b;
+    @FXML
+    private Label lab_c;
+    @FXML
+    private Label lab_d;
+    @FXML
+    private Label lab_e;
+    @FXML
+    private Label lab_f;
+    @FXML
+    private Label lab_g;
+    @FXML
+    private Label lab_h;
+    @FXML
+    private Label lab_i;
+    @FXML
+    private Label lab_j;
+    @FXML
+    private Label lab_k;
+    @FXML
+    private Label lab_l;
+    @FXML
+    private Label lab_m;
+    @FXML
+    private Label lab_n;
+    @FXML
+    private Label lab_o;
+
 
 
 
@@ -71,6 +104,71 @@ public class HelloController {
 
     Random rand = new Random();
 
+    //Eredménytábla
+    public void score(){
+        switch (counter) {
+            case 1 -> {
+                lab_a.setTextFill(Color.BLACK);
+                lab_b.setTextFill(Color.DARKORANGE);
+                prize.setText("Az ön nyereménye:          0 Ft");
+            }
+            case 2 -> {
+                lab_b.setTextFill(Color.BLACK);
+                lab_c.setTextFill(Color.DARKORANGE);
+            }
+            case 3 -> {
+                lab_c.setTextFill(Color.BLACK);
+                lab_d.setTextFill(Color.DARKORANGE);
+            }
+            case 4 -> {
+                lab_d.setTextFill(Color.BLACK);
+                lab_e.setTextFill(Color.DARKORANGE);
+            }
+            case 5 -> {
+                lab_e.setTextFill(Color.WHITE);
+                lab_f.setTextFill(Color.DARKORANGE);
+                prize.setText("Az ön nyereménye:    100.000 Ft");
+            }
+            case 6 -> {
+                lab_f.setTextFill(Color.BLACK);
+                lab_g.setTextFill(Color.DARKORANGE);
+            }
+            case 7 -> {
+                lab_g.setTextFill(Color.BLACK);
+                lab_h.setTextFill(Color.DARKORANGE);
+            }
+            case 8 -> {
+                lab_h.setTextFill(Color.BLACK);
+                lab_i.setTextFill(Color.DARKORANGE);
+            }
+            case 9 -> {
+                lab_i.setTextFill(Color.BLACK);
+                lab_j.setTextFill(Color.DARKORANGE);
+            }
+            case 10 -> {
+                lab_j.setTextFill(Color.WHITE);
+                lab_k.setTextFill(Color.DARKORANGE);
+                prize.setText("Az ön nyereménye:  1.500.000 Ft");
+            }
+            case 11 -> {
+                lab_k.setTextFill(Color.BLACK);
+                lab_l.setTextFill(Color.DARKORANGE);
+            }
+            case 12 -> {
+                lab_l.setTextFill(Color.BLACK);
+                lab_m.setTextFill(Color.DARKORANGE);
+            }
+            case 13 -> {
+                lab_m.setTextFill(Color.BLACK);
+                lab_n.setTextFill(Color.DARKORANGE);
+            }
+            case 14 -> {
+                lab_n.setTextFill(Color.BLACK);
+                lab_o.setTextFill(Color.DARKORANGE);
+            }
+        }
+        ;
+    }
     // Kérdésváltó
     public void changequestion(String id) {
 
@@ -81,7 +179,12 @@ public class HelloController {
             b.setText(q.questions[counter][2]);
             c.setText(q.questions[counter][3]);
             d.setText(q.questions[counter][4]);
-        } else {
+            if(counter == 15){
+                prize.setText("Az ön nyereménye: 40.000.000 Ft");
+                close.setVisible(true);
+            }
+        }
+        else {
             close.setVisible(true);
         }
     }
@@ -123,6 +226,8 @@ public class HelloController {
         assigment_counter_a = 0;
         question_click.setVisible(false);
         a.setTextFill(Color.BLACK);}
+
+        score();
     }
 
     @FXML
@@ -149,6 +254,8 @@ public class HelloController {
         assigment_counter_b = 0;
         question_click.setVisible(false);
         b.setTextFill(Color.BLACK);}
+
+        score();
     }
 
     @FXML
@@ -175,6 +282,8 @@ public class HelloController {
         assigment_counter_c = 0;
         question_click.setVisible(false);
         c.setTextFill(Color.BLACK);}
+
+        score();
     }
 
     @FXML
@@ -201,6 +310,8 @@ public class HelloController {
         assigment_counter_d = 0;
         question_click.setVisible(false);
         d.setTextFill(Color.BLACK);}
+
+        score();
     }
 
     @FXML

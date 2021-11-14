@@ -13,10 +13,11 @@ public class Questions {
             {"Ki volt Szinyei Merse Pál?", "Költő", "Szobrász", "Festő", "Zenész", "c"}, //8.
             {"Mi a kénnnek a vegyjele?", "K", "Cl", "N", "S", "d"}, //9.
             {"Mit jelent az hogy CPU?", "Processzor", "Professzor", "Profósz", "Profi", "a"}, //10.
-            {"Milyen étel a slambuc?", "diós tészta", "Sajtos tészta", "Mákos tészta", "Krumplis tészta", "d"}, //11.
+            {"Milyen étel a slambuc?", "Diós tészta", "Sajtos tészta", "Mákos tészta", "Krumplis tészta", "d"}, //11.
             {"Minek a mértékegysége a newton?", "Sebesség", "Súly", "Erő", "Gyorsulás", "c"}, //12.
             {"Ki a Csillagok háborújának atyja?", "Jake Lloyd", "George Lucas", "J. K. Rowling", " Ewan McGregor", "b"}, //13.
             {"Milyen állat Garfield?", "Macska", "Kutya", "Ló", "Szamár", "a"}, //14.
-            {"Melyik a Föld leghosszabb folyója?", "Duna", "Mississipi", "Nílus", "Amazonas", "d"}, //15.
+            {"Melyik a Föld leghosszabb folyója?", "Duna", "Mississipi", "Nílus", "Amazonas", "d"},//15
+            {"", "", "", "", "", ""}
     };
 }
