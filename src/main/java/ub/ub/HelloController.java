@@ -9,6 +9,10 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import java.util.Random;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import java.io.File;
+
 
 
 
@@ -167,7 +171,6 @@ public class HelloController {
                 lab_o.setTextFill(Color.DARKORANGE);
             }
         }
-        ;
     }
     // Kérdésváltó
     public void changequestion(String id) {
@@ -189,6 +192,11 @@ public class HelloController {
         }
     }
 
+    Media sound = new Media(new File("src/music/music2.mp3").toURI().toString());
+    MediaPlayer player = new MediaPlayer(sound);
+
+
+
     // Gomb események
     @FXML
     private void startgame() {
@@ -199,7 +207,7 @@ public class HelloController {
         d.setText(q.questions[counter][4]);
         menu.setVisible(false);
         game.setVisible(true);
-
+        player.play();
     }
 
     @FXML
